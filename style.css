@@ -1,0 +1,176 @@
+.zoom {
+  padding: 50px;
+  background-color: white;
+  transition: transform .2s; /* Animation */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(2.0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+p {
+    text-align: justify;
+}
+
+.row {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: #f5f5f5 !important; 
+    font-size: 1.4em;
+}
+
+#body-container { 
+    padding: 0 !important;
+    background: white !important;
+    max-width: 1200px !important;
+    min-width: 760px !important;
+}
+
+.icon img {
+    width:80%; 
+    border:2px solid black;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.icon p {
+    text-align:center;
+    padding-top:1em;
+}
+
+.author {
+    text-align:center;
+}
+
+.author p {
+    text-align:center;
+}
+
+.caption {
+    text-align:center; 
+    padding-top:.25em;
+    /*padding-top:0em; */
+    margin-bottom: 0em;"
+}
+
+.active {
+    background: #d3d3d3 !important; 
+    color: black !important; 
+}
+
+
+button {
+    margin: 0 !important; 
+    margin-top: .5em !important; 
+    margin-bottom: .5em !important; 
+}
+
+
+.col-0 {
+    margin-right:0;
+    padding-right:0;
+}
+
+.col-1 {
+    margin-left:0;
+    padding-left:0;
+}
+
+.col-2 {
+    margin-right:0;
+    padding-right:0;
+}
+
+.col-3 {
+    margin-left:0;
+    padding-left:0;
+}
+
+
+.r0 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    width: 100% !important;
+    margin-bottom: 5%;
+}
+
+.r1 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100% !important;
+}
+
+.c0 {
+    border-left: 1px solid black;
+}
+
+.c1 {
+    border-right: 1px solid black;
+}
+
+.c2 {
+    border-left: 1px solid black;
+}
+
+.c3 {
+    border-right: 1px solid black;
+}
+
+
+.r00 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    width: 50% !important;
+    margin-bottom: 5%;
+}
+
+.r11 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 50% !important;
+}
+
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #272f91; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}

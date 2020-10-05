@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width' />
+
+    <title>Privacy Protection for AI Models and Sensors</title>
+    <link rel="shortcut icon" href="media/favicon.png">
+    <link rel="apple-touch-icon" href="media/favicon.png">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- Bootstrap core JS-->
+    <script src="bootstrap.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="row color-row"> </div> 
+
+    <div id="body-container" class="container">
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+      <div class="row" style="padding-top:1em; padding-bottom:1em;">     
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h5 style="text-align: center;">NEC Open House 2020</h5>
+          <h1 style="text-align: center;">Privacy Protection for AI Models and Sensors</h1>
+        </div>
+      </div> 
+
+      <div class="row"> <!-- style="font-size:.875em;"> -->
+        <div class="author col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <a target="_blank" href='http://www.nec-labs.com/francesco-pittaluga'>Francesco Pittaluga</a>
+          <p> NLA Media Analytics </p>
+        </div>
+        <div class="author col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <a target="_blank" href='http://www.nec-labs.com/xiang-yu'>Xiang Yu</a>
+          <p> NLA Media Analytics </p>
+        </div>
+        <div class="author col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <a target="_blank" href='http://www.nec-labs.com/yi-hsuan-tsai'>Yi-Hsuan Tsai</a>
+          <p> NLA Media Analytics </p>
+        </div>
+        <div class="author col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <a target="_blank" href='http://www.nec-labs.com/manmohan-chandraker'>Manmohan Chandraker</a>
+          <p> NLA Media Analytics </p>
+        </div>
+      </div>
+    
+
+
+       <div class="row" style="margin-top: 2.5em;">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-12">
+              <p style="margin-top:.5em; width:100%;"><strong>ABSTRACT:</strong> AI models for applications such as surveillance, healthcare, finance and retail require collecting and analyzing sensitive data. Deploying AI solutions, thus, requires assuring customers that private information is not leaked and legal regulations are followed. 
+              We present two ways to provide such an assurance.
+              First, we develop privacy-aware sensors that acquire data in sensitive applications like hospital or smart home monitoring. Our sensors guarantee that high accuracy is achieved for tasks like behavior analysis, while personally identifiable information such as faces or bodies is hidden.
+              Second, we develop methods that allow training of AI models, while guaranteeing that private information is not leaked. For example, we can train AI for medical diagnosis without leaking patient health records. 
+            </p>
+
+            <div style="margin-top:2em;">
+              <span style="font-weight: bold;">Click to explore our research:</span><br /> 
+<!--               <a href="#slides"><button style="background-color: #e7e7e7; color: black; border: none; padding: 15px 17px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;">Panel Slides</button></a>
+              <a href="#video"><button style="background-color: #e7e7e7; color: black; border: none; padding: 15px 17px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;">Video Demonstration</button></a>  -->
+              <a href="#sensing"><button style="background-color: #e7e7e7; color: black; border: none; padding: 15px 17px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"><strong>Resources</strong>: Privacy-Aware Sensors</button></a>
+              <a href="#models"><button style="background-color: #e7e7e7; color: black; border: none; padding: 15px 17px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"><strong>Resources</strong>: Privacy-Aware AI Models</button></a>
+           </div>
+        </div>
+      </div>
+
+
+
+  <!--     <div class="row" style="margin-top: 2em;">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <hr id="slides">
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:1em;">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom: .5em;">
+          <h1 style="margin-top: 1em; margin-bottom: .2em;">Panel Slides</h1>
+          <p style="margin-bottom:.25em;">Hover over the buttons to see slides.</p>
+          <button type="button" class="btn btn-default btn-s toggle-btn active pan" btn-cls="pan" img-cls="one">Slide 1</button>
+          <button type="button" class="btn btn-default btn-s toggle-btn pan" btn-cls="pan" img-cls="two">Slide 2</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <img src="media/panel/Slide1.png" class="pan one" style="width:100%; border: 1px solid black;"/>
+          <img src="media/panel/Slide2.png" class="pan two" style="width:100%; border: 1px solid black; display:none"/>
+        </div>
+      </div>
+
+
+      <div class="row" style="margin-top: 6em;">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <hr id="video">
+        </div>
+      </div>
+
+
+      <div class="row" style="margin-top: 2em;">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <h1 style="margin-top: 1em; margin-bottom: .5em;">Video Demonstration</h1>
+           <video style="width:100%;" controls>
+            <source src="media/FEC_0928_VideoNarration_Privacy_0928.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div> -->
+
+
+      <div class="row" style="margin-top: 4em;">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <hr id="sensing">
+        </div>
+      </div>
+     
+
+      <div class="row" style="margin-top:3em;">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h1>Resources: Privacy-Aware Sensing</h1>
+          <p>Privacy-aware sensing prevents snooping attacks by never recording any sensitive information. We benchmark our privacy-aware sensing against companies that manufacture cameras or lenses, which seek privacy through hand-designed filters that sacrifice accuracy. Other companies that provide smart home or surveillance solutions achieve high accuracy, but sacrifice privacy since they work with standard images. In contrast, our sensors are designed to achieve both high accuracy and high privacy. Our privacy-aware sensing develops phase masks that are inserted in the camera to suppress private information, while achieving high accuracy on a given task. The design of the mask and a deep network for the task are trained together, along with an adversarial network to suppress private information. We demonstrate this for action recognition and depth estimation as two tasks, while face information is obfuscated to protect PII. In each case, we observe that our learned optics can achieve even higher task accuracy than standard cameras, while ensuring that face information is suppressed.
+          </p>
+        </div>
+      </div>
+
+
+     <div class="row" style="margin-top:2em;">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom: .5em;">
+        <h2 style="margin-top: 1em; margin-bottom: .2em;"><span style="">Pipeline for Fabricating Learned Optical Elements</h2>
+        <p>Our roadmap for privacy-aware sensing will first develop a camera prototype and then manufacture a sensor. These will be used to define privacy standards in surveillance applications and open up new markets for smart home and hospital monitoring without leaking PII.</p>
+        <img src="media/fabrication_pipeline.png" style="width: 100%;" />
+      </div>
+    </div>
+
+    <div class="row" style="margin-top:2em;">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom: .5em;">
+        <h2 style="margin-top: 1em; margin-bottom: .5em;"><span style="">Simulated vs Actual Point-Spread-Function at Various Depths</h2>
+        <img src="media/simulated_vs_real_psfs.png" style="width: 100%;" />
+      </div>
+    </div>
+
+
+    <div class="row" style="margin-top:3em;">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom: .5em;">
+        <h2 style="margin-top: 1em; margin-bottom: .2em;"><span style="">Privacy-Aware Depth Estimation</h2>
+        <p style="margin-bottom:0em;">Using our framework, we learn a phase mask design that (a) optically filters out facial ID information to inhibit face recognition and (b) optically encodes depth information to facilitate state-of-the-art performance on deep learning-based monocular depth estimation. Hover over the buttons to compare the results under different privacy-utility trade-offs. Note, that our approach provides great depth estimates across all settings.</p>
+        <strong>Privacy Level (1=Lowest, 4=Highest):</strong> <button type="button" class="btn btn-default btn-s toggle-btn active inp zsc" btn-cls="inp" img-cls="zsc">1</button>
+        <button type="button" class="btn btn-default btn-s toggle-btn inp zs" btn-cls="inp" img-cls="zs">2</button>
+        <button type="button" class="btn btn-default btn-s toggle-btn inp zc" btn-cls="inp" img-cls="zc">3</button>
+        <button type="button" class="btn btn-default btn-s toggle-btn inp z" btn-cls="inp" img-cls="z">4</button>
+
+        <strong style="margin-left: 2em;">Utility Level (1=Lowest, 4=Highest):</strong> <button type="button" class="btn btn-default btn-s toggle-btn active inp zsc" btn-cls="inp" img-cls="zsc">4</button>
+        <button type="button" class="btn btn-default btn-s toggle-btn inp zs" btn-cls="inp" img-cls="zs">3</button>
+        <button type="button" class="btn btn-default btn-s toggle-btn inp zc" btn-cls="inp" img-cls="zc">2</button>
+        <button type="button" class="btn btn-default btn-s toggle-btn inp z" btn-cls="inp" img-cls="z">1</button>
+
+      </div>
+    </div>
+
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <img src="media/salsa/low.gif" class="inp z" style="width:100%;" />
+          <img src="media/salsa/medium_low.gif" class="inp zc" style="display:none; width:100%;" />
+          <img src="media/salsa/medium_high.gif" class="inp zs" style="display:none; width:100%;" />
+          <img src="media/salsa/high.gif" class="inp zsc" style="display:none; width:100%;" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <p class="caption"><strong>Scene</strong></p>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <p class="caption"><strong>Private Image from Our Sensor</strong></p>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <p class="caption"><strong>Depth from Private Image</strong></p>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <p class="caption"><strong>Ground-Truth Depth</strong></p>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 6em;">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <hr id="models">
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:3em;">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h1>Resources: Privacy-Aware AI Models</h1>
+          <p>We develop two types of technologies for privacy-aware AI models: differential privacy and differentially private federated Learning. These technologies prevent attackers from using model outputs to decipher data, either in stand-alone training or in combined training across multiple stakeholders. Furthermore, Our privacy-aware AI models achieve high privacy and accuracy, with less data required compared to competitors. For example, Google needs much larger data than us, so cannot achieve high accuracy when customer data is limited. Other approaches such as federated learning used by Apple achieve accuracy, but do not provide a provable guarantee of privacy. As such, our models are suitable for a range of applications such as surveillance with face and human data, as well as finance with data from multiple banks. It can allow NEC to become a sole vendor at airports by securely aggregating information across multiple agencies such as airlines, security and retail.
+          </p>
+
+
+            <div style="margin-top:2em;">
+              <span style="font-weight: bold;">Click to explore our research:</span><br /> 
+              <a href="media/paper_dp.pdf" target="_blank"><button style="background-color: #e7e7e7; color: black; border: none; padding: 15px 17px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"><strong>Paper</strong>: Differential Privacy</button></a>
+              <a href="media/paper_dpfl.pdf" target="_blank"><button style="background-color: #e7e7e7; color: black; border: none; padding: 15px 17px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"><strong>Paper</strong>: Differentially Private Federated Learning</button></a>
+           </div>
+        </div>
+      </div>
+
+
+
+      <div class="row" style="margin-top:4em;">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom: .5em;">
+        <h2 style="margin-top: 0em; margin-bottom: .2em;">Differential Privacy</h2>
+          <p>
+          Our differential privacy method provides customers a provable guarantee of privacy, against all types of attacks and for all types of data. Prior methods from Google achieve privacy by splitting the private data and training an ensemble of teacher models to guide the deployed model, which needs a large amount of data.
+          Our method relies on privacy amplification by sub-sampling to achieve higher accuracy and privacy, with orders of magnitude less data. On same datasets, our method can achieve 90% higher privacy than Google in stand-alone training. In federated training, our differential privacy method can achieve 20% higher accuracy and up to 5 times better privacy than previous works.  
+        </p>
+
+        <h3 style="margin-top: 2em; margin-bottom: .2em;">Privacy Leakage for Differential Privacy</h3>
+
+        <p style="margin-bottom:.25em;"> 
+          We show for each of the utility-privacy trade-off point, i.e., with privacy cost 2.46, what is the level of attacked privacy leakage, represented by the volume of overall leaked images.</p>
+            <button type="button" class="btn btn-default btn-s toggle-btn pate" btn-cls="pate" img-cls="ninety">(2.46,38.62%)</button>
+            <button type="button" class="btn btn-default btn-s toggle-btn pate" btn-cls="pate" img-cls="seventy">(3.39,43.68%)</button>
+            <button type="button" class="btn btn-default btn-s toggle-btn pate" btn-cls="pate" img-cls="fifty">(5.33,48.47%)</button>
+            <button type="button" class="btn btn-default btn-s toggle-btn pate" btn-cls="pate" img-cls="thirty">(11.09,51.19%)</button>
+            <button type="button" class="btn btn-default btn-s toggle-btn active pate" btn-cls="pate" img-cls="ten">(66.6,51.67%)</button>
+        </div>
+      </div>
+      <div class="row" style="margin-bottom:2em;">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <img src="media/img_pate_new/ue1.png" class="pate ninety" style="width: 100%;"/>
+          <img src="media/img_pate_new/ue2.png" class="pate seventy" style="display:none; width: 100%;"/>
+          <img src="media/img_pate_new/ue3.png" class="pate fifty" style="display:none; width: 100%;"/>
+          <img src="media/img_pate_new/ue4.png" class="pate thirty" style="display:none; width: 100%;"/>
+          <img src="media/img_pate_new/ue5.png" class="pate ten" style="display:none; width: 100%;"/>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:4em;">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom: .5em;">
+        <h2 style="margin-top: 1em; margin-bottom: .2em;">Differentially Private Federated Learning</h2>
+          <p> While federated learning (FL) enables distributed agents to collaboratively train a centralized model without sharing data with each other, it fails to protect users against inference attacks that mine private information from the centralized model. Thus, facilitating federated learning methods with differential privacy (DPFL) becomes attractive. Existing algorithms based on privately aggregating clipped gradients require many rounds of communication, which may not converge, and cannot scale up to large-capacity models due to explicit dimension-dependence in its added noise. In this paper, we adopt the knowledge transfer model of private learning, namely the <i>PATE</i> approach, as well as the recent alternative <i>PrivateKNN</i> to the federated learning setting. The key difference is that our method privately aggregates the \emph{labels} from the agents in a <i>voting scheme</i>, instead of aggregating the <i>gradients</i>, hence avoiding the dimension dependence and achieving signiﬁcant savings in communication cost. Theoretically, we show that when the margins of the voting scores are large, the agents enjoy exponentially higher accuracy and stronger (data-dependent) differential privacy guarantees on both agent-level and instance-level. Extensive experiments show that our approach signiﬁcantly improves the privacy-utility trade-off over the current state-of-the-art in DPFL. </p>
+        
+        </div>
+      </div>
+
+      
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3 style="margin-top: 1em; margin-bottom: .5em;">Approach Overview</h3>
+          <img src="media/dpfl/main.jpeg" style="width:80%; border: 1px solid black;" /> 
+
+
+          <h3 style="margin-top: 3em; margin-bottom: .5em;">Experimental Results</h3>
+          <p style="margin-bottom: 2.5em;">We validate the efficacy of our approach by comparing our approach to state-of-the-art methods for DPFL over two datasets: DomainNet and Office-Caltech.</p>
+        </div>
+      </div>
+
+      
+      <div class="row">
+        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+            <img src="media/dpfl/DomainNet.png" style="width: 100%;" />
+        </div>
+        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+            <img src="media/dpfl/Office_Caltech.png" style="width: 100%;" />
+        </div>
+      </div>
+
+
+      <div class="row" style="margin-top: 4em; width: 80%;">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <img src="media/dpfl/table_domainnet.png" style="width: 100%;" />
+          <p class="caption"><strong>Evaluation on DomainNet dataset.</strong></p>
+        </div>
+      </div>
+
+
+      <div class="row" style="margin-top: 4em; width: 80%;">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <img src="media/dpfl/table_office.png" style="width: 100%;" />
+          <p class="caption"><strong>Evaluation on Office-Caltech dataset.</strong></p>
+        </div>
+      </div>
+
+
+    <div class="row" style="margin-bottom: 5em;"></div>
+
+
+
+
+    <script>
+      $('.toggle-btn').on('click mouseover', function () {
+        // set active button state
+        $('button.'+$(this).attr('btn-cls')).removeClass('active');
+        // $(this).addClass('active');
+        $('button.'+$(this).attr('img-cls')).addClass('active');
+        
+        // toggle images
+        $('img.'+$(this).attr('btn-cls')).hide();
+        $('img.'+$(this).attr('img-cls')).show();
+      });
+
+
+
+      //Get the button:
+      mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+
+
+    </script>
+
+  </body>
+</html>
