@@ -226,14 +226,14 @@
         <h3 style="margin-top: 2em; margin-bottom: .2em;">Privacy Leakage for Differential Privacy</h3>
 
         <p style="margin-bottom:.25em;"> 
-          In this demo, we compare the performance of five models trained using our DP method to meet five different privacy requirements. We demonstrate that each model not only achieves its target privacy requirement, but also practical utility for facial attribute classification (i.e. smile, with beard, male, etc.).</p>
+          In this demo, we compare the performance of five models trained using our DP method to meet five different privacy requirements. We demonstrate that each model not only achieves its target privacy requirement, but also practical utility for facial attribute classification (i.e. smile, with beard, male, etc.). </p>
             <strong>Privacy Cost:</strong>
             <button type="button" class="btn btn-default btn-s toggle-btn active pate ninety" btn-cls="pate" img-cls="ninety">2.46</button>
             <button type="button" class="btn btn-default btn-s toggle-btn pate seventy" btn-cls="pate" img-cls="seventy">3.39</button>
             <button type="button" class="btn btn-default btn-s toggle-btn pate fifty" btn-cls="pate" img-cls="fifty">5.33</button>
             <button type="button" class="btn btn-default btn-s toggle-btn pate thirty" btn-cls="pate" img-cls="thirty">11.09</button>
             <button type="button" class="btn btn-default btn-s toggle-btn pate ten" btn-cls="pate" img-cls="ten">66.6</button>
-            <strong style="margin-left: 2em;">Classification Accuracy (%):</strong>
+            <strong style="margin-left: 2em;">Utility (Attribute Accuracy %):</strong>
             <button type="button" class="btn btn-default btn-s toggle-btn active pate ninety" btn-cls="pate" img-cls="ninety">38.62</button>
             <button type="button" class="btn btn-default btn-s toggle-btn pate seventy" btn-cls="pate" img-cls="seventy">43.68</button>
             <button type="button" class="btn btn-default btn-s toggle-btn pate fifty" btn-cls="pate" img-cls="fifty">48.47</button>
@@ -242,7 +242,18 @@
 
         </div>
       </div>
-      <div class="row" style="margin-bottom:2em;">
+      <div class="row" style="margin-top:1em;">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <p class="caption" style="margin: 0 !important; padding-left: 2em;"><strong>Model Utility vs Privacy Cost</strong></p>
+        </div>
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+        </div>
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+          <p class="caption" style="margin: 0 !important;"><strong>Set of Private Images Leaked by Model (More Images Means Less Privacy)</strong></p>
+        </div>
+      </div>
+
+      <div class="row" style="margin-bottom:2em; margin-top: .5em;">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <img src="media/img_pate_new/ue1.png" class="pate ninety" style="width: 100%;"/>
           <img src="media/img_pate_new/ue2.png" class="pate seventy" style="display:none; width: 100%;"/>
