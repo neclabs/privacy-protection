@@ -226,14 +226,20 @@
         <h3 style="margin-top: 2em; margin-bottom: .2em;">Privacy Leakage for Differential Privacy</h3>
 
         <p style="margin-bottom:.25em;"> 
-          We show for each of the utility-privacy trade-off point, i.e., with privacy cost 2.46, what is the level of attacked privacy leakage, represented by the volume of overall leaked images. The utility for demonstration here is facial attribute classification, i.e. smile, with beard, male, etc.
+          In this demo, we compare the performance of five models trained to meet five different privacy requirements, using our PrivateKNN method. For each model, we demonstrate that the model not only achieves the target privacy requirement, but also practical utility for facial attribute classification (i.e. smile, with beard, male, etc.).</p>
+            <strong>Privacy Cost:</strong>
+            <button type="button" class="btn btn-default btn-s toggle-btn active pate ninety" btn-cls="pate" img-cls="ninety">2.46</button>
+            <button type="button" class="btn btn-default btn-s toggle-btn pate seventy" btn-cls="pate" img-cls="seventy">3.39</button>
+            <button type="button" class="btn btn-default btn-s toggle-btn pate fifty" btn-cls="pate" img-cls="fifty">5.33</button>
+            <button type="button" class="btn btn-default btn-s toggle-btn pate thirty" btn-cls="pate" img-cls="thirty">11.09</button>
+            <button type="button" class="btn btn-default btn-s toggle-btn pate ten" btn-cls="pate" img-cls="ten">66.6</button>
+            <strong style="margin-left: 2em;">Classification Accuracy (%):</strong>
+            <button type="button" class="btn btn-default btn-s toggle-btn active pate ninety" btn-cls="pate" img-cls="ninety">38.62</button>
+            <button type="button" class="btn btn-default btn-s toggle-btn pate seventy" btn-cls="pate" img-cls="seventy">43.68</button>
+            <button type="button" class="btn btn-default btn-s toggle-btn pate fifty" btn-cls="pate" img-cls="fifty">48.47</button>
+            <button type="button" class="btn btn-default btn-s toggle-btn pate thirty" btn-cls="pate" img-cls="thirty">51.19</button>
+            <button type="button" class="btn btn-default btn-s toggle-btn pate ten" btn-cls="pate" img-cls="ten">51.67</button>
 
-</p>
-            <button type="button" class="btn btn-default btn-s toggle-btn pate" btn-cls="pate" img-cls="ninety">(2.46,38.62%)</button>
-            <button type="button" class="btn btn-default btn-s toggle-btn pate" btn-cls="pate" img-cls="seventy">(3.39,43.68%)</button>
-            <button type="button" class="btn btn-default btn-s toggle-btn pate" btn-cls="pate" img-cls="fifty">(5.33,48.47%)</button>
-            <button type="button" class="btn btn-default btn-s toggle-btn pate" btn-cls="pate" img-cls="thirty">(11.09,51.19%)</button>
-            <button type="button" class="btn btn-default btn-s toggle-btn active pate" btn-cls="pate" img-cls="ten">(66.6,51.67%)</button>
         </div>
       </div>
       <div class="row" style="margin-bottom:2em;">
